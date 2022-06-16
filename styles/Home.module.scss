@@ -1,0 +1,166 @@
+#layouPage {
+  display: flex;
+  flex-Direction: column;
+  align-items: center;
+  gap: 30px;
+
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  .search-movie {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      width: 35%;
+
+      label {
+        position: absolute;
+
+        width: 1px;
+        height: 1px;
+
+        padding: 0;
+        margin: -1px;
+
+        overflow: hidden;
+
+        clip: rect(0, 0, 0,);
+
+        white-space: nowrap;
+
+        border-width: 0;
+      }
+
+      .inputWrapper {
+        display: flex;
+        align-items: center;
+
+        max-width: 100%;
+        
+        input {
+          width: 100%;
+
+          padding: 6px;
+  
+          border: none;
+          border-radius: 6px 0 0 6px;
+        }
+
+        button {
+          width: 25%;
+  
+          padding: 6px;
+  
+          border: none;
+          border-radius: 0 6px 6px 0;
+
+          background-color: rgb(6, 173, 6);
+
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .moviesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 95%;
+
+    h2 {
+      text-align: center;
+    }
+    
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      align-items: center;
+      gap: 30px;
+      
+      width: 100%;
+      
+      list-style: none;
+    }
+  }
+  
+  .movie {
+    max-height: 1500px;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  
+    background-color: #fff;
+  
+    border-radius: 10px;
+    box-shadow: 13px 7px 0px 0px rgb(167, 166, 166);
+    
+    .information-movie {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+  
+      .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+  
+        width: 95%;
+        margin: 0 auto;
+  
+        h2 {
+          text-align: center;
+        }
+    
+        p {
+          text-align: justify;
+        }
+      }
+  
+      .classification {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+      }
+    
+      .vote {
+        display: flex;
+        justify-content: space-evenly;
+    
+        width: 100%;
+    
+        span {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+    
+          h3 {
+            font-size: 15px;
+          }
+        }
+      }
+    
+      .information-license {
+        width: 100%;
+        text-align: center;
+  
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+
